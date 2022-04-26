@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+/* Universal selectors */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Inter' sans-serif;
+    line-height: 1;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    background-color:aqua;
+}
+/* aligning the tittle at the centre */
+h1{
+    text-align: center;
+}
+img{
+    height: 200px;
+    border-radius: 8px;
+    transform: scale(1.4);
+    box-shadow: 0 26px 24px rgba(0, 0, 0, 0.2);
+    /* background-color: aqua; */
+}
+.carousel{
+    background-color: rgb(78, 150, 78);
+    width: 800px;
+    margin: 100px auto;
+    color: rgb(238, 225, 225);
+    border-radius: 8px;
+    padding: 20px;
+    padding-left: 68px;
+    padding-right: 48px;
+    display: flex;
+    /* align-items: center; */
+    gap: 68px;
+    position: relative;
+    top: 50%;
+}
+
+.value{
+    line-height: 1.6;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 60px;
+
+}
+
+.nimoh-author{
+    font-size: 14px;
+    margin-bottom: 5px;
+
+
+}
+
+.work{
+    font-size: 12px;
+
+}
+
+/* controls */
+.slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:white;
+    height: 38px;
+    width: 38px;
+    border: none;
+    position:absolute;
+    border-radius: 50%;
+    box-shadow: 0 16px 24px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.btn--left{
+    left: 0;
+    top: 50%;
+    transform:translate(-50%, -50%)
+
+}
+
+.btn--right{
+    right: 0;
+    top: 50%;
+    transform:translate(50%, -50%)
+
+}
+/* button icons */
+.btn-icon{
+    height: 24px;
+    width: 24px;
+    stroke: forestgreen;
+    
+}
+
+.dots{
+    position:absolute;
+    left: 50%;
+    transform:translate(50%, 32px);
+    bottom: 0;
+    display: flex;
+    gap: 12px;
+    
+}
+
+.dot{
+    height:12px;
+    width: 12px;
+    border-radius: 50%;
+    cursor:pointer;
+    background-color:white;
+    border: 2px solid forestgreen;
+    /* position: relative; */
+}
+
+/* filling the first dot button */
+.dot--first{
+    background-color:forestgreen;
+
+}
